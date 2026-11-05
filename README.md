@@ -16,16 +16,19 @@ Enter a name, choose a product category, select an item, and confirm the purchas
 
 ## Technology
 
-- C-style console programming
+- C++11 console programming
 - Standard input and output
 
 The source file currently has a `.cpp` extension.
 
+## Build and Run
+
+With `g++` installed, run these commands in the repository folder:
+
+```bash
+g++ -std=c++11 "E-Shopping Management System.cpp" -o shopping.exe
+.\shopping.exe
+```
 ## Scope
 
 This is a console prototype. It does not include a web interface, online payments, live inventory, or a database.
-
-## Known Issues
-
-- The remove-item logic does not accept product ID `0`.
-- The program uses `gets()` for name input; this should be replaced with a bounded input method.
